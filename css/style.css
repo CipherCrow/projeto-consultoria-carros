@@ -40,6 +40,26 @@ ul>li>a.selected{color: red}
 .navegacao li > a{
 	color: black;
 }
+.mobile i{
+	font-size: 25px;
+}
+.mobile ul{
+	background-color: #ddd;
+	position: absolute;
+	width: 100%;
+	top: 80px;
+	left: 0;
+	text-align: center;
+}
+.mobile li{
+	display: block;
+	border: 1px solid white;
+	padding: 2px;
+}
+.mobile li a{
+	padding: 0 30%;
+}
+.mobile ul{display: none;}
 				/*Banner*/
 
 section.banner{
@@ -108,6 +128,8 @@ section.banner{
 }
 
 @media screen and (max-width: 425px){
+	.desktop{display: none;}
+	.mobile{display: block;}
 	.text-banner{
 		padding: 20px;
 		text-align: center;

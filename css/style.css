@@ -17,6 +17,7 @@ a{text-decoration: none;}
 .mobile{display: none;}
 .clear{clear: both;}
 ul>li>a.selected{color: red}
+.w33{width: 33%;}
 
 				/*header*/
 
@@ -41,7 +42,8 @@ ul>li>a.selected{color: red}
 	color: black;
 }
 .mobile i{
-	font-size: 25px;
+	font-size: 30px;
+	color: red;
 }
 .mobile ul{
 	background-color: #ddd;
@@ -106,7 +108,63 @@ section.banner{
 	color: black;
 }
 
-				/*venda*/
+				/*Destaque*/
+
+section.destaque-veiculos{
+	padding: 30px 0;
+}
+.line-titulo{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.line-titulo > .divisoria{
+	width: 25%;
+	background-color: red;
+	height: 1px;
+	align-self: flex-end;
+}
+.destaque-veiculos > .line-titulo > h2{
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+.destaque-veiculos > .container{
+	max-width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 30px 0;
+}
+.vitrine-single > div.img-vitrine{
+	background-image: url('../images/carro1.jpg');
+	width: 100%;
+	padding-top: 100%;
+	background-size: 100% 100%;
+	border: 5px solid white;
+}
+.vitrine-single h2{
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+}
+.vitrine-single p{
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+.vitrine-single a{
+	color: white;
+	font-size: 16px;
+	font-style: italic;
+	cursor: pointer;
+	padding: 5px 10%;
+	background-color: #EB2D2D;
+	border-bottom: 3px solid #B21E1E;
+}
 				/*sobre*/
 				/*contato*/
 				/*footer*/
@@ -117,7 +175,9 @@ section.banner{
 		background-size: 90% auto;
 		background-position: 200% 100%;
 	} /*banner*/
-}
+
+} /*1400px*/
+
 @media screen and (max-width: 768px){
 	section.banner{
 		background-size: cover;
@@ -125,7 +185,14 @@ section.banner{
 		height: 60vw;
 		min-height: 500px;
 	} /*banner*/
-}
+} /*768px*/
+
+@media screen and (max-width: 500px){
+	.w33{width: 100%;}
+	.vitrine-single{
+		margin: 0 4% 20px 4%;
+	}
+} /*500px*/
 
 @media screen and (max-width: 425px){
 	.desktop{display: none;}
@@ -149,4 +216,7 @@ section.banner{
 		width: 100%;
 		position: static;
 	}
-}
+	.line-titulo > .divisoria{
+		display: none;
+	}
+} /*425px*/

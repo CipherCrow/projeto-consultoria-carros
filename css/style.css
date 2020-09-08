@@ -13,11 +13,22 @@ html,body{
 	padding: 0 2%;
 	margin: 0 auto;
 }
+.btn1{
+	color: white;
+	font-size: 16px;
+	font-style: italic;
+	cursor: pointer;
+	padding: 5px 10%;
+	background-color: #EB2D2D;
+	border-bottom: 3px solid #B21E1E;
+}
+
 a{text-decoration: none;}
 .mobile{display: none;}
 .clear{clear: both;}
 ul>li>a.selected{color: red}
 .w33{width: 33%;}
+.w50{width: 50%;}
 
 				/*header*/
 
@@ -132,7 +143,7 @@ section.destaque-veiculos{
 	padding: 0 10px;
 }
 .destaque-veiculos > .container{
-	max-width: 900px;
+	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
@@ -156,16 +167,71 @@ section.destaque-veiculos{
 	font-size: 15px;
 	margin-bottom: 15px;
 }
-.vitrine-single a{
-	color: white;
-	font-size: 16px;
-	font-style: italic;
-	cursor: pointer;
-	padding: 5px 10%;
-	background-color: #EB2D2D;
-	border-bottom: 3px solid #B21E1E;
+
+				/*servicos/depoimentos*/
+
+section.servicos-depoimentos{
+	display: flex;
+	flex-wrap: wrap;
 }
-				/*sobre*/
+.painel-servicos{
+	background-color: #242424;
+	padding: 60px 0;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+.servicos-wraper h2{
+	font-size: 35px;
+	font-style: italic;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+.servicos-wraper ul{
+	list-style: inside;
+}
+.servicos-wraper li{
+	font-size: 17px;
+}
+.servicos-wraper a{
+	float: right;
+	margin-top: 20px;
+}
+.painel-depoimentos{
+	background-color: #EB2D2D;
+	padding: 60px 50px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.text-depoimentos h2{
+	font-size: 35px;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+.text-depoimentos p{
+	font-size: 17px;
+}
+.next-author{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	padding-top: 5px;
+}
+.next-btns i{
+	padding: 0 5px;
+}
+.next-author i{
+	color: #ccc;
+	font-size: 25px;
+}
+
+
+
+
 				/*contato*/
 				/*footer*/
 				/*responsivo*/
@@ -189,9 +255,11 @@ section.destaque-veiculos{
 
 @media screen and (max-width: 500px){
 	.w33{width: 100%;}
+	.w50{width: 100%;}
 	.vitrine-single{
 		margin: 0 4% 20px 4%;
 	}
+
 } /*500px*/
 
 @media screen and (max-width: 425px){

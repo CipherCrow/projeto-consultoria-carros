@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Consultora de carros</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Jonas Torquatro Oliveira da Silva">
+	<meta name="keywords" content="html,css,consultora,carros,treino,compra,venda,alugar">
+	<meta name="description" content="Projeto de uma vitrine virtual para uma consultora especializada em comprar e vender carros.">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+
+	<header id="header-principal">
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.jpg">
+			</div>
+
+			<nav class="navegacao desktop">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="venda.html"  class="selected">Venda</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			<nav class="navegacao mobile">
+				<i class="fas fa-bars"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="venda.html"  class="selected">Venda</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div> <!-- container -->
+	</header>
+
+	<section class="venda">
+		<div class="line-titulo">
+			<div class="divisoria"></div>
+			<h2>Veículos a Venda</h2>
+			<div class="divisoria"></div>
+		</div> <!-- titulo -->
+		<div class="container">
+			<div class="content-venda">
+				
+				<aside class="w30">
+					<div class="search">
+						<h2>Filtre por preço</h2>
+						<div class="barra-preco">
+							<div class="barra-preco-fill"></div>
+							<div class="pointer-barra"></div>
+						</div> <!-- barrapreco -->
+						<div class="valor-pesquisa">
+							<p>R$0,00</p>
+							<p>R$80.000,00</p>
+							<div class="clear"></div>
+						</div>
+					</div><!-- search -->
+
+					<div class="search2">
+						<h2>Filtre por ano</h2>
+						<form>
+							<ul>
+								<div class="form-search-wraper">
+									<input type="checkbox" id="item1">
+									<label for="item1"></label>
+									<span>Todas as decadas</span>
+								</div> <!-- form-wrapper -->
+								<div class="form-search-wraper">
+									<input type="checkbox" id="item2">
+									<label for="item2"></label>
+									<span>1960 - 1970</span>
+								</div> <!-- form-wrapper -->
+								<div class="form-search-wraper">
+									<input type="checkbox" id="item3">
+									<label for="item3"></label>
+									<span>1971 - 1990</span>
+								</div> <!-- form-wrapper -->
+								<div class="form-search-wraper">
+									<input type="checkbox" id="item4">
+									<label for="item4"></label>
+									<span>1991 - 2000</span>
+								</div> <!-- form-wrapper -->
+								
+							</ul>
+						</form>
+					</div><!-- search2 -->
+
+				</aside>
+				<div class="clear"></div>
+			</div>
+		</div> <!-- container -->
+	</section>
+
+	<footer>
+		<div class="container">
+			<nav>
+				<ul class="menu-footer">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="venda.html"  class="selected">Venda</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			<p>Todos os direitos reservados.</p>
+		</div>
+	</footer>
+</body>
+</html>

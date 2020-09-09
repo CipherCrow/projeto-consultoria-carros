@@ -53,6 +53,7 @@ ul>li>a.selected{color: red}
 .navegacao li > a{
 	color: black;
 }
+.navegacao li > a:hover{text-decoration: underline;}
 .mobile i{
 	font-size: 30px;
 	color: red;
@@ -266,10 +267,33 @@ section.contato form{
 	border: 1px solid #ccc;
 }
 
-
-
-
 				/*footer*/
+
+footer{
+	padding: 30px 0;
+	background-color: #252525;
+	color: white;
+	font-style: italic;
+	font-weight: bolder;
+}
+footer > .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu-footer li{
+	display: inline-block;
+	padding: 0 30px;
+}
+.menu-footer li > a{
+	color: white;
+	font-size: 18px;
+}
+.menu-footer li > a:hover{text-decoration: underline;}
+.menu-footer p{
+	font-size: 18px;
+}
+
 				/*responsivo*/
 
 @media screen and (max-width: 1400px){
@@ -301,6 +325,7 @@ section.contato form{
 @media screen and (max-width: 425px){
 	.desktop{display: none;}
 	.mobile{display: block;}
+	.menu-footer{display: none;}
 	.text-banner{
 		padding: 20px;
 		text-align: center;
@@ -325,5 +350,9 @@ section.contato form{
 	}
 	.contato > .container > form{
 		margin-top: 0px;
+	}
+	footer > .container{
+		align-items: center;
+		justify-content: center;
 	}
 } /*425px*/

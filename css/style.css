@@ -323,7 +323,7 @@ section.venda{
 	float: left;
 }
 .search{
-	width: 300px;
+	width: 90%;
 }
 .search h2{
 	font-size: 24px;
@@ -410,6 +410,14 @@ section.venda{
 .form-search-wraper span{
 	padding: 0 10px;
 }
+.vitrine-venda{
+	float: left;
+}
+.vitrine-venda > .vitrine-single{
+	float: left;
+	margin-bottom: 30px;
+}
+
 
 				/*responsivo*/
 
@@ -422,12 +430,33 @@ section.venda{
 } /*1400px*/
 
 @media screen and (max-width: 768px){
+	.w30{width: 100%;}
+	.w70{width: 100%;}
 	section.banner{
 		background-size: cover;
 		background-position: center;
 		height: 60vw;
 		min-height: 500px;
 	} /*banner*/
+	div.content-venda{
+		text-align: center;
+	}
+	.search{
+		width: 90%;
+		display: inline-block;
+	}
+	.search2{
+		margin:5px 0;
+		display: inline-block;
+
+	}
+	div.vitrine-venda{
+		text-align: center;
+	}
+	div.vitrine-venda > div.vitrine-single{
+		float: none;
+		display: inline-block;
+	}
 } /*768px*/
 
 @media screen and (max-width: 500px){

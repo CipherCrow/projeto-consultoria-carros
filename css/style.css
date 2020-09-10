@@ -377,15 +377,18 @@ footer > .container{
 .nav-galeria-wraper{
 	width: 200%;
 }
-.mini-img{
-	cursor: pointer;
+.mini-img-wraper{
 	float: left;
-	padding-top: calc(33% * (100 / 200) * 0.6 ) ;
+	padding: 8px;
 	width: calc(33.3% * (100 / 200) );
+}
+.mini-img{
+	width: 100%;
+	cursor: pointer;
+	padding-top: 70%;
 	background-image: url('../images/carro1.jpg');
 	background-position: center;
 	background-size: cover;
-	border: 4px solid white;
 }
 .descricao-veiculo{
 	float: left;

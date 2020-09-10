@@ -22,8 +22,8 @@
 
 			<nav class="navegacao desktop">
 				<ul>
-					<li><a href="index.html" class="selected">Home</a></li>
-					<li><a href="venda.html">Venda</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="venda.html" class="selected">Venda</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>
@@ -31,8 +31,8 @@
 			<nav class="navegacao mobile">
 				<i class="fas fa-bars"></i>
 				<ul>
-					<li><a href="index.html" class="selected">Home</a></li>
-					<li><a href="venda.html">Venda</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="venda.html" class="selected">Venda</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>
@@ -40,14 +40,67 @@
 		</div> <!-- container -->
 	</header>
 
-	<section class="banner">
+	<section class="venda-single">
+
+		<div class="line-titulo">
+			<div class="divisoria"></div>
+			<h2>Volkswagen Karmann-ghia</h2>
+			<div class="divisoria"></div>
+		</div> <!-- titulo -->
 		<div class="container">
-			<div class="text-banner">
-				<div class="single-banner">Consultoria</div>
-				<div class="single-banner">Compra</div>
-				<div class="single-banner">Venda</div>
-				<div class="single-banner">email@emailorem.com</div>
-			</div>
+
+			<div class="info-veiculo w60">
+				<div class="foto-destaque"></div>
+				<div class="nav-galeria">
+					<div class="nav-galeria-wraper">
+						<div class="mini-img"></div>
+						<div class="mini-img"></div>
+						<div class="mini-img"></div>
+						<div class="mini-img"></div>
+						<div class="mini-img"></div>
+						<div class="mini-img"></div>
+					</div>
+				</div>
+			</div><!-- info -->
+
+			<div class="descricao-veiculo w40">
+			<h2>R$ 20.000,00</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nec sapien eget posuere. Sed efficitur, est a interdum viverra, leo odio accumsan purus, ac mollis arcu diam in nibh.</p>
+				<a class="btn1" href="#contato">Entre em contato</a>
+			</div> <!-- descricao -->
+			<div class="clear"></div>
+		</div> <!-- container -->
+	</section>
+
+	<section id="contato">
+		<div class="line-titulo">
+			<div class="divisoria"></div>
+			<h2>Contato</h2>
+			<div class="divisoria"></div>
+		</div> <!-- titulo -->
+		<div class="container">
+			<form>
+				<div class="input-wraper w100">
+					<input type="text" name="name" placeholder="Nome" required="">
+				</div>
+
+				<div class="input-wraper w50">
+					<input type="email" name="email" placeholder="Email" required="">
+				</div>
+
+				<div class="input-wraper w50">
+					<input type="tel" name="telefone" placeholder="Telefone">
+				</div>
+
+				<div class="input-wraper w100">
+					<textarea placeholder="Sua mensagem aqui..." required=""></textarea>
+				</div>
+
+				<div class="input-wraper w100">
+					<input class="btn1" type="submit" name="btnOk" value="Enviar!">
+				</div>
+				<div class="clear"></div>
+			</form>
 		</div> <!-- container -->
 	</section>
 
@@ -85,76 +138,13 @@
 			</div>
 		</div> <!-- container -->
 	</section>
-	<section class="servicos-depoimentos">
-
-		<div class="painel-servicos w50">
-			<div class="servicos-wraper">
-				<h2>Serviços</h2>
-				<ul>
-					<li>Compra</li>
-					<li>Venda</li>
-					<li>Consultoria de veículos</li>
-					<li>Indicação de Mecânicos e peças</li>
-				</ul>
-					<a class="btn1"  href="">Saiba mais</a>
-			</div>
-			<div class="clear"></div>
-		</div> <!-- painer-servicos -->
-
-		<div class="painel-depoimentos w50">
-			<div class="text-depoimentos">
-				<h2>Depoimentos</h2>
-				<blockquotes>“O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</blockquotes>
-			</div>
-			<div class="next-author">
-				<div class="next-btns">
-					<i class="fas fa-caret-left"></i>
-					<i class="fas fa-caret-right"></i>
-				</div>
-				<h3>João Pereira da Silva</h3>
-			</div>
-		</div>
-
-	</section>
-
-	<section id="contato">
-		<div class="line-titulo">
-			<div class="divisoria"></div>
-			<h2>Contato</h2>
-			<div class="divisoria"></div>
-		</div> <!-- titulo -->
-		<div class="container">
-			<form>
-				<div class="input-wraper w100">
-					<input type="text" name="name" placeholder="Nome" required="">
-				</div>
-
-				<div class="input-wraper w50">
-					<input type="email" name="email" placeholder="Email" required="">
-				</div>
-
-				<div class="input-wraper w50">
-					<input type="tel" name="telefone" placeholder="Telefone">
-				</div>
-
-				<div class="input-wraper w100">
-					<textarea placeholder="Sua mensagem aqui..." required=""></textarea>
-				</div>
-
-				<div class="input-wraper w100">
-					<input class="btn1" type="submit" name="btnOk" value="Enviar!">
-				</div>
-				<div class="clear"></div>
-			</form>
-		</div> <!-- container -->
-	</section>
 
 	<footer>
 		<div class="container">
 			<nav>
 				<ul class="menu-footer">
-					<li><a href="index.html" class="selected">Home</a></li>
-					<li><a href="venda.html">Venda</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="venda.html" class="selected">Venda</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>

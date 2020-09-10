@@ -29,7 +29,9 @@ a{text-decoration: none;}
 ul>li>a.selected{color: red}
 .w30{width: 30%;}
 .w33{width: 33%;}
+.w40{width: 40%;}
 .w50{width: 50%;}
+.w60{width: 60%;}
 .w70{width: 70%;}
 .w100{width: 100%;}
 
@@ -235,33 +237,33 @@ section.servicos-depoimentos{
 
 				/*contato*/
 
-section.contato{
+section#contato{
 	padding: 30px 0;
 }
-.contato > .line-titulo > h2{
+#contato > .line-titulo > h2{
 	text-align: center;
 	font-size: 25px;
 	font-style: italic;
 	text-transform: uppercase;
 	padding: 0 10px;
 }
-section.contato form{
+section#contato form{
 	text-align: center;
 	margin: 30px auto;
 	max-width: 660px;
 }
-.contato form .input-wraper{
+#contato form .input-wraper{
 	float: left;
 	padding: 10px;
 }
-.contato form input:not([type=submit]){
+#contato form input:not([type=submit]){
 	width: 100%;
 	padding-left: 15px;
 	border: 1px solid #ccc;
 	height: 50px;
 	line-height: 50px;
 }
-.contato form textarea{
+#contato form textarea{
 	resize: vertical;
 	width: 100%;
 	padding: 20px 10px;
@@ -296,6 +298,69 @@ footer > .container{
 	font-size: 18px;
 }
 								/*Pagina
+								 de
+								 produto*/
+.venda-single{
+	border-top: 3px solid #EB2D2D;
+	padding-top: 20px;
+}
+.venda-single > .line-titulo > h2{
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+.venda-single > .line-titulo > .divisoria{
+	width: 20%;
+	background-color: black;
+}
+.venda-single > .container{
+	padding-top: 30px;
+	max-width: 1000px;
+}
+.info-veiculo{
+	float: left;
+}
+.foto-destaque{
+	width: 100%;
+	padding-top: 70%;
+	background-position: center;
+	background-size: contain;
+	background-image: url('../images/carro1.jpg');
+	background-repeat: no-repeat;
+}
+.nav-galeria{
+	width: 100%;
+	padding: 15px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.nav-galeria-wraper{
+	width: 200%;
+}
+.mini-img{
+	float: left;
+	padding-top: calc(33% * (100 / 200) * 0.4 ) ;
+	width: calc(33.3% * (100 / 200) );
+	background-image: url('../images/carro1.jpg');
+	background-position: center;
+	background-size: cover;
+	border: 4px solid white;
+}
+.descricao-veiculo{
+	float: left;
+	padding: 20px;
+}
+
+.descricao-veiculo p{
+	max-width: 90%;
+	margin: 25px 0;
+}
+
+
+
+								 /*Pagina
 								 de
 								 vendas*/
 
@@ -494,7 +559,7 @@ section.venda{
 	.line-titulo > .divisoria{
 		display: none;
 	}
-	.contato > .container > form{
+	#contato > .container > form{
 		margin-top: 0px;
 	}
 	footer > .container{

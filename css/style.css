@@ -128,7 +128,7 @@ section.banner{
 				/*Destaque*/
 
 section.destaque-veiculos{
-	padding: 30px 0;
+	padding: 20px 0;
 }
 .line-titulo{
 	display: flex;
@@ -238,7 +238,7 @@ section.servicos-depoimentos{
 				/*contato*/
 
 section#contato{
-	padding: 30px 0;
+	padding: 30px 0 10px 0;
 }
 #contato > .line-titulo > h2{
 	text-align: center;
@@ -315,6 +315,20 @@ footer > .container{
 	width: 20%;
 	background-color: black;
 }
+.info-bread{
+	text-align: left;
+	margin-bottom: 20px; 
+}
+.info-bread a{
+	text-decoration: none;
+	color: black;
+}
+.info-bread a:last-child{
+	color: red;
+}
+.info-bread span{
+	padding: 0 10px;
+}
 .venda-single > .container{
 	padding-top: 30px;
 	max-width: 1000px;
@@ -326,22 +340,47 @@ footer > .container{
 	width: 100%;
 	padding-top: 70%;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-image: url('../images/carro1.jpg');
 	background-repeat: no-repeat;
 }
-.nav-galeria{
+.nav-galeria-parent{
 	width: 100%;
-	padding: 15px;
+	padding: 20px;
+	position: relative;
+}
+.nav-galeria-parent > i{
+	font-size: 40px;
+	color: red;
+	cursor: pointer;
+}
+.nav-galeria-parent i.fa-angle-left{
+	position: absolute;
+	left: 6px;
+	top: calc(50% - 20px);
+/*	transform:translateY(calc(-50% - 20px));
+	-ms-transform:translateY(calc(-50% - 20px));*/
+}
+.nav-galeria-parent i.fa-angle-right{
+	position: absolute;
+	right: 6px;
+	top: calc(50% - 20px);
+	top: calc(50% - 20px);
+/*	transform:translateY(calc(-50% - 20px));
+	-ms-transform:translateY(calc(-50% - 20px));*/
+}
+
+.nav-galeria{
 	overflow: hidden;
-	margin-top: 20px;
+	width: 100%;
 }
 .nav-galeria-wraper{
 	width: 200%;
 }
 .mini-img{
+	cursor: pointer;
 	float: left;
-	padding-top: calc(33% * (100 / 200) * 0.4 ) ;
+	padding-top: calc(33% * (100 / 200) * 0.6 ) ;
 	width: calc(33.3% * (100 / 200) );
 	background-image: url('../images/carro1.jpg');
 	background-position: center;
@@ -357,8 +396,6 @@ footer > .container{
 	max-width: 90%;
 	margin: 25px 0;
 }
-
-
 
 								 /*Pagina
 								 de
@@ -496,6 +533,8 @@ section.venda{
 
 @media screen and (max-width: 768px){
 	.w30{width: 100%;}
+	.w60{width: 100%;}
+	.w40{width: 100%;}
 	.w70{width: 100%;}
 	section.banner{
 		background-size: cover;
@@ -521,6 +560,24 @@ section.venda{
 	div.vitrine-venda > div.vitrine-single{
 		float: none;
 		display: inline-block;
+	}
+	section.venda-single > .container{
+		max-width: 90%;
+	}
+	section.venda-single > .info-veiculo{
+		display: inline-block;
+		float: none;
+	}
+	div.descricao-veiculo{
+		text-align: center;
+		float: none;
+		padding: 10px 0;
+	}
+	.descricao-veiculo p{
+		display: inline-block;
+		max-width: 90%;
+		margin: 20px 0;
+		text-align: justify;
 	}
 } /*768px*/
 
@@ -565,5 +622,8 @@ section.venda{
 	footer > .container{
 		align-items: center;
 		justify-content: center;
+	}
+	section.venda-single > .container{
+		max-width: 100%;
 	}
 } /*425px*/

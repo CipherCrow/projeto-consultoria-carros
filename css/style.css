@@ -522,9 +522,68 @@ section.venda{
 	float: left;
 	margin-bottom: 30px;
 }
+								/*Pagina
+								 de
+								 Sobre*/
 
+section.sobre{
+	min-height: 80%;
+	padding: 30px 2%;
+	margin-bottom: 40px;
+	border-top: 3px solid #EB2D2D;
+}
+.sobre > .line-titulo > h2{
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+.sobre >.line-titulo > .divisoria{
+	background-color: black;
+}
+section.sobre > .container{
+	margin-top: 40px;
+	max-width: 840px;
+}
+.img-destaque-sobre{
+	width: 100%;
+	padding-top: 60%;
+	background-color: #ddd;
+}
+.descricao-autor{
+	margin-top: 20px;
+}
+.descricao-autor h2{
+	font-size: 25px;
+}
+.descricao-autor p{
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: justify;
+}
+.descricao-foto-autor{
+	margin-top: 10px;
+}
+.img-small-autor{
+	float: left;
+	padding-top: 25%;
+	background-color: #ddd;
+}
+.descricao-descricao{
+	float: left;
+}
+.descricao-foto-autor .descricao-descricao p{
+	padding: 15px;
+	font-size: 18px;
+	text-align: justify;
+}
 
-				/*responsivo*/
+								/*
+
+								responsivo
+
+								*/
 
 @media screen and (max-width: 1400px){
 	section.banner{
@@ -582,6 +641,9 @@ section.venda{
 		margin: 20px 0;
 		text-align: justify;
 	}
+	.descricao-autor{
+		text-align: center;
+	}
 } /*768px*/
 
 @media screen and (max-width: 500px){
@@ -589,6 +651,23 @@ section.venda{
 	.w50{width: 100%;}
 	.vitrine-single{
 		margin: 0 4% 20px 4%;
+	}
+	.container > div.descricao-foto-autor{
+		text-align: center;
+	}
+	.descricao-autor{
+		float: none;
+		display: inline-block;
+		text-align: center;
+	}
+	.img-small-autor{
+		float: none;
+		display: inline-block;
+		padding-top: 80%;
+		max-width: 80%;
+	}
+	.descricao-descricao p{
+		padding: 0;
 	}
 
 } /*500px*/

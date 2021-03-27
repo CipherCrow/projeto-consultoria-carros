@@ -9,21 +9,22 @@ html,body{
 }
 html{
 	scroll-behavior: smooth;
+	font-size: 10px;
 }
 
 .container{
-	max-width: 1280px;
+	max-width: 128rem;
 	padding: 0 2%;
 	margin: 0 auto;
 }
 .btn1{
 	color: white;
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-style: italic;
 	cursor: pointer;
-	padding: 5px 10%;
+	padding: .5rem 10%;
 	background-color: #EB2D2D;
-	border-bottom: 3px solid #B21E1E;
+	border-bottom: .3rem solid #B21E1E;
 }
 
 a{text-decoration: none;}
@@ -31,7 +32,7 @@ a{text-decoration: none;}
 .clear{clear: both;}
 ul>li>a.selected{color: red}
 .w30{width: 30%;}
-.w33{width: 33%;}
+.w33{width: 33.3%;}
 .w40{width: 40%;}
 .w50{width: 50%;}
 .w60{width: 60%;}
@@ -41,7 +42,7 @@ ul>li>a.selected{color: red}
 				/*header*/
 
 #header-principal{
-	padding: 10px 0;
+	padding: 1rem 0;
 }
 #header-principal > .container{
 	display: flex;
@@ -49,12 +50,12 @@ ul>li>a.selected{color: red}
 	justify-content: space-between;
 }
 .logo img{
-	width: 160px;
+	width: 16rem;
 }
 .navegacao li{
 	display: inline-block;
-	padding: 0 20px;
-	font-size: 20px;
+	padding: 0 2rem;
+	font-size: 2rem;
 	font-style: italic;
 }
 .navegacao li > a{
@@ -62,21 +63,21 @@ ul>li>a.selected{color: red}
 }
 .navegacao li > a:hover{text-decoration: underline;}
 .mobile i{
-	font-size: 30px;
+	font-size: 3rem;
 	color: red;
 }
 .mobile ul{
 	background-color: #ddd;
 	position: absolute;
 	width: 100%;
-	top: 80px;
+	top: 8rem;
 	left: 0;
 	text-align: center;
 }
 .mobile li{
 	display: block;
-	border: 1px solid white;
-	padding: 2px;
+	border: .1rem solid white;
+	padding: .2rem;
 }
 .mobile li a{
 	padding: 0 30%;
@@ -86,7 +87,7 @@ ul>li>a.selected{color: red}
 
 section.banner{
 	width: 100%;
-	height: 650px;
+	height: 65rem;
 	background-color: black;
 	background-image: url('../images/bg.jpg');
 	background-size: contain;
@@ -94,36 +95,36 @@ section.banner{
 	background-repeat: no-repeat;
 }
 .text-banner{
-	padding: 60px;
+	padding: 6rem;
 }
 .single-banner{
-	width: 250px;
-	height: 60px;
+	width: 25rem;
+	height: 6rem;
 	background-image: url('../images/box-text.png');
 	background-size: 100% 100%;
 	color:white;
-	font-size: 23px;
-	padding: 0 25px;
-	line-height: 60px;
-	margin: 15px 0;
+	font-size: 2.3rem;
+	padding: 0 2.5rem;
+	line-height: 6rem;
+	margin: 1.5rem 0;
 	text-transform: uppercase;
 	text-align: center;
 	font-style: italic;
 }
 .text-banner .single-banner:nth-of-type(2){
-	width: 200px;
+	width: 20rem;
 	position: relative;
-	left: -10px;
+	left: -1rem;
 }
 .text-banner .single-banner:nth-of-type(3){
-	width: 150px;
+	width: 15rem;
 	position: relative;
-	left: -20px;
+	left: -2rem;
 }
 .text-banner .single-banner:nth-of-type(4){
-	width: 300px;
+	width: 30rem;
 	position: relative;
-	left: -30px;
+	left: -3rem;
 	background-image: url('../images/box-white-text.png');
 	color: black;
 }
@@ -131,7 +132,7 @@ section.banner{
 				/*Destaque*/
 
 section.destaque-veiculos{
-	padding: 20px 0;
+	padding: 2rem 0;
 }
 .line-titulo{
 	display: flex;
@@ -146,35 +147,35 @@ section.destaque-veiculos{
 }
 .destaque-veiculos > .line-titulo > h2{
 	text-align: center;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-style: italic;
 	text-transform: uppercase;
 	padding: 0 10px;
 }
 .destaque-veiculos > .container{
-	max-width: 1000px;
+	max-width: 100rem;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
-	padding: 30px 0;
+	padding: 3rem 0;
 }
 .vitrine-single > div.img-vitrine{
 	background-image: url('../images/carro1.jpg');
 	width: 100%;
 	padding-top: 100%;
 	background-size: 100% 100%;
-	border: 5px solid white;
+	border: .5rem solid white;
 }
 .vitrine-single h2{
 	font-style: italic;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 2rem;
 }
 .vitrine-single p{
 	font-style: italic;
 	font-weight: lighter;
-	font-size: 15px;
-	margin-bottom: 15px;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 				/*servicos/depoimentos*/
@@ -185,30 +186,30 @@ section.servicos-depoimentos{
 }
 .painel-servicos{
 	background-color: #242424;
-	padding: 60px 0;
+	padding: 6rem 0;
 	color: white;
 	display: flex;
 	justify-content: center;
 }
 .servicos-wraper h2{
-	font-size: 35px;
+	font-size: 3.5rem;
 	font-style: italic;
 	font-weight: normal;
-	padding-bottom: 20px;
+	padding-bottom: 2rem;
 }
 .servicos-wraper ul{
 	list-style: inside;
 }
 .servicos-wraper li{
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 .servicos-wraper a{
 	float: right;
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 .painel-depoimentos{
 	background-color: #EB2D2D;
-	padding: 60px 50px;
+	padding: 6rem 5rem;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -216,68 +217,78 @@ section.servicos-depoimentos{
 	justify-content: center;
 }
 .text-depoimentos h2{
-	font-size: 35px;
+	font-size: 3.5rem;
 	font-weight: normal;
-	padding-bottom: 20px;
+	padding-bottom: 2rem;
 }
-.text-depoimentos p{
-	font-size: 17px;
+.text-depoimentos blockquotes{
+	font-size: 1.7rem;
 }
 .next-author{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	color: black;
-	padding-top: 5px;
+	padding-top: .5rem;
 }
 .next-btns i{
-	padding: 0 5px;
+	padding: 0 .5rem;
+	cursor: pointer;
 }
 .next-author i{
 	color: #ccc;
-	font-size: 25px;
+	font-size: 2.5rem;
+}
+.next-author h3{
+	font-size: 1.6rem;
 }
 
 				/*contato*/
 
 section#contato{
-	padding: 30px 0 10px 0;
+	padding: 3rem 0 1rem 0;
 }
 #contato > .line-titulo > h2{
 	text-align: center;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-style: italic;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 section#contato form{
 	text-align: center;
-	margin: 30px auto;
-	max-width: 660px;
+	margin: 3rem auto;
+	max-width: 66rem;
 }
 #contato form .input-wraper{
 	float: left;
-	padding: 10px;
+	padding: 1rem;
 }
 #contato form input:not([type=submit]){
 	width: 100%;
-	padding-left: 15px;
-	border: 1px solid #ccc;
-	height: 50px;
-	line-height: 50px;
+	padding-left: 1.5rem;
+	border: .1rem solid #ccc;
+	height: 5rem;
+	line-height: 5rem;
+	outline: none;
 }
 #contato form textarea{
 	resize: vertical;
 	width: 100%;
-	padding: 20px 10px;
-	height: 250px;
-	border: 1px solid #ccc;
+	padding: 2rem 1rem;
+	height: 25rem;
+	border: .1rem solid #ccc;
+	outline: none;
+}
+#contato form input[type=submit]{
+	border: none;
+	border-bottom: .3rem solid #B21E1E;
 }
 
 				/*footer*/
 
 footer{
-	padding: 30px 0;
+	padding: 3rem 0;
 	background-color: #252525;
 	color: white;
 	font-style: italic;
@@ -290,29 +301,29 @@ footer > .container{
 }
 .menu-footer li{
 	display: inline-block;
-	padding: 0 30px;
+	padding: 0 3rem;
 }
 .menu-footer li > a{
 	color: white;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 .menu-footer li > a:hover{text-decoration: underline;}
-.menu-footer p{
-	font-size: 18px;
+footer > .container p{
+	font-size: 1.8rem;
 }
 								/*Pagina
 								 de
 								 produto*/
 .venda-single{
-	border-top: 3px solid #EB2D2D;
-	padding-top: 20px;
+	border-top: .3rem solid #EB2D2D;
+	padding-top: 2rem;
 }
 .venda-single > .line-titulo > h2{
 	text-align: center;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-style: italic;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 .venda-single > .line-titulo > .divisoria{
 	width: 20%;
@@ -320,21 +331,22 @@ footer > .container{
 }
 .info-bread{
 	text-align: left;
-	margin-bottom: 20px; 
+	margin-bottom: 2rem; 
 }
 .info-bread a{
 	text-decoration: none;
 	color: black;
+	font-size: 1.6rem;
 }
 .info-bread a:last-child{
 	color: red;
 }
 .info-bread span{
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 .venda-single > .container{
-	padding-top: 30px;
-	max-width: 1000px;
+	padding-top: 3rem;
+	max-width: 100rem;
 }
 .info-veiculo{
 	float: left;
@@ -349,26 +361,26 @@ footer > .container{
 }
 .nav-galeria-parent{
 	width: 100%;
-	padding: 20px;
+	padding: 2rem;
 	position: relative;
 }
 .nav-galeria-parent > i{
-	font-size: 40px;
+	font-size: 4rem;
 	color: red;
 	cursor: pointer;
 }
 .nav-galeria-parent i.fa-angle-left{
 	position: absolute;
-	left: 6px;
-	top: calc(50% - 20px);
+	left: .6rem;
+	top: calc(50% - 2rem);
 /*	transform:translateY(calc(-50% - 20px));
 	-ms-transform:translateY(calc(-50% - 20px));*/
 }
 .nav-galeria-parent i.fa-angle-right{
 	position: absolute;
-	right: 6px;
-	top: calc(50% - 20px);
-	top: calc(50% - 20px);
+	right: .6rem;
+	top: calc(50% - 2rem);
+	top: calc(50% - 2rem);
 /*	transform:translateY(calc(-50% - 20px));
 	-ms-transform:translateY(calc(-50% - 20px));*/
 }
@@ -382,7 +394,7 @@ footer > .container{
 }
 .mini-img-wraper{
 	float: left;
-	padding: 8px;
+	padding: .8rem;
 	width: calc(33.3% * (100 / 200) );
 }
 .mini-img{
@@ -395,12 +407,13 @@ footer > .container{
 }
 .descricao-veiculo{
 	float: left;
-	padding: 20px;
+	padding: 2rem;
+	font-size: 1.6rem;
 }
 
 .descricao-veiculo p{
 	max-width: 90%;
-	margin: 25px 0;
+	margin: 2.5rem 0;
 }
 
 								 /*Pagina
@@ -411,21 +424,21 @@ footer > .container{
 
 section.venda{
 	min-height: 80%;
-	padding: 30px 0;
-	border-top: 3px solid #EB2D2D;
+	padding: 3rem 0;
+	border-top: .3rem solid #EB2D2D;
 }
 .venda > .line-titulo > h2{
 	text-align: center;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-style: italic;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 .venda >.line-titulo > .divisoria{
 	background-color: black;
 }
 .content-venda{
-	margin-top: 40px;
+	margin-top: 4rem;
 }
 .content-venda > aside{
 	float: left;
@@ -434,16 +447,16 @@ section.venda{
 	width: 90%;
 }
 .search h2{
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: normal;
 }
 .search .barra-preco{
 	width: 100%;
-	height: 20px;
+	height: 2rem;
 	background-color: white;
-	border: 1px solid #ccc;
-	border-radius: 20px; 
-	margin-top: 10px;
+	border: .1rem solid #ccc;
+	border-radius: 2rem; 
+	margin-top: 1rem;
 	position: relative;
 }
 .barra-preco-fill{
@@ -451,25 +464,26 @@ section.venda{
 	left: 0;
 	top: 0;
 	width: 30%;
-	height: 20px;
-	border-radius: 20px;
+	height: 2rem;
+	border-radius: 2rem;
 	background:
 	linear-gradient(to bottom, rgb(255,255,255),rgb(200,200,200));
 }
 .pointer-barra{
-	width: 26px;
-	height: 26px;
-	border-radius: 5px;
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: .5rem;
 	background:
 	linear-gradient(to bottom, rgb(255,255,255),rgb(160,160,160));
-	border: 1px solid black;;
+	border: .1rem solid black;;
 	position: absolute;
-	left: calc( 30% - 13px);
-	top: -3px;
+	left: calc( 30% - 1.3rem);
+	top: -.3rem;
 	cursor: pointer;
 }
 .valor-pesquisa{
-	padding-top: 10px;
+	padding-top: 1rem;
+	font-size: 1.6rem;
 }
 .valor-pesquisa p:nth-of-type(1){
 	float: left;
@@ -478,28 +492,31 @@ section.venda{
 	float: right;
 }
 .search2{
-	margin-top: 40px;
+	margin-top: 4rem;
 }
 .search2 h2{
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: normal;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 .form-search-wraper{
-	margin-top: 5px;
+	margin-top: .5rem;
 }
 .form-search-wraper input{
 	display: none;
 }
 .form-search-wraper label{
-	width: 20px;
-	height: 20px;
+	width: 2rem;
+	height: 2rem;
 	display: inline-block;
 	vertical-align: top;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border: .1rem solid #ccc;
+	border-radius: .3rem;
 	cursor: pointer;
 	position: relative;
+}
+.form-search-wraper span{
+	font-size: 1.6rem;
 }
 .form-search-wraper input[type=checkbox]:checked 
 + label > .circle{
@@ -507,23 +524,23 @@ section.venda{
 }
 .form-search-wraper .circle{
 	display: none;
-	width: 8px;
-	height: 8px;
-	border-radius: 4px;
+	width: .8rem;
+	height: .8rem;
+	border-radius: .4rem;
 	background-color: red;
 	position: absolute; 
-	left: 6px;
-	top: 6px;
+	left: .6rem;
+	top: .6rem;
 }
 .form-search-wraper span{
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 .vitrine-venda{
 	float: left;
 }
 .vitrine-venda > .vitrine-single{
 	float: left;
-	margin-bottom: 30px;
+	margin-bottom: 3rem;
 }
 								/*Pagina
 								 de
@@ -531,23 +548,23 @@ section.venda{
 
 section.sobre{
 	min-height: 80%;
-	padding: 30px 2%;
+	padding: 3rem 2%;
 	margin-bottom: 40px;
-	border-top: 3px solid #EB2D2D;
+	border-top: .3rem solid #EB2D2D;
 }
 .sobre > .line-titulo > h2{
 	text-align: center;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-style: italic;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 .sobre >.line-titulo > .divisoria{
 	background-color: black;
 }
 section.sobre > .container{
-	margin-top: 40px;
-	max-width: 840px;
+	margin-top: 4rem;
+	max-width: 84rem;
 }
 .img-destaque-sobre{
 	width: 100%;
@@ -555,18 +572,18 @@ section.sobre > .container{
 	background-color: #ddd;
 }
 .descricao-autor{
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 .descricao-autor h2{
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 .descricao-autor p{
-	font-size: 18px;
-	margin-top: 10px;
+	font-size: 1.8rem;
+	margin-top: 1rem;
 	text-align: justify;
 }
 .descricao-foto-autor{
-	margin-top: 10px;
+	margin-top: 1rem;
 }
 .img-small-autor{
 	float: left;
@@ -577,8 +594,8 @@ section.sobre > .container{
 	float: left;
 }
 .descricao-foto-autor .descricao-descricao p{
-	padding: 15px;
-	font-size: 18px;
+	padding: 1.5rem;
+	font-size: 1.8rem;
 	text-align: justify;
 }
 
@@ -605,7 +622,7 @@ section.sobre > .container{
 		background-size: cover;
 		background-position: center;
 		height: 60vw;
-		min-height: 500px;
+		min-height: 50rem;
 	} /*banner*/
 	div.content-venda{
 		text-align: center;
@@ -615,7 +632,7 @@ section.sobre > .container{
 		display: inline-block;
 	}
 	.search2{
-		margin:5px 0;
+		margin:.5rem 0;
 		display: inline-block;
 
 	}
@@ -636,12 +653,12 @@ section.sobre > .container{
 	div.descricao-veiculo{
 		text-align: center;
 		float: none;
-		padding: 10px 0;
+		padding: .1rem 0;
 	}
 	.descricao-veiculo p{
 		display: inline-block;
 		max-width: 90%;
-		margin: 20px 0;
+		margin: 2rem 0;
 		text-align: justify;
 	}
 	.descricao-autor{
@@ -653,7 +670,7 @@ section.sobre > .container{
 	.w33{width: 100%;}
 	.w50{width: 100%;}
 	.vitrine-single{
-		margin: 0 4% 20px 4%;
+		margin: 0 4% 2rem 4%;
 	}
 	.container > div.descricao-foto-autor{
 		text-align: center;
@@ -680,18 +697,18 @@ section.sobre > .container{
 	.mobile{display: block;}
 	.menu-footer{display: none;}
 	.text-banner{
-		padding: 20px;
+		padding: 2rem;
 		text-align: center;
 	}
 	.single-banner{
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 	.text-banner .single-banner:nth-of-type(2){
-		width: 200px;
+		width: 20rem;
 		position: static;
 	}
 	.text-banner .single-banner:nth-of-type(3){
-		width: 150px;
+		width: 15rem;
 		position: static;
 	}
 	.text-banner .single-banner:nth-of-type(4){

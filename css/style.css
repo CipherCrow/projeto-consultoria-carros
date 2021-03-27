@@ -191,6 +191,11 @@ section.servicos-depoimentos{
 	display: flex;
 	justify-content: center;
 }
+.servicos-wraper{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
 .servicos-wraper h2{
 	font-size: 3.5rem;
 	font-style: italic;
@@ -204,7 +209,7 @@ section.servicos-depoimentos{
 	font-size: 1.7rem;
 }
 .servicos-wraper a{
-	float: right;
+	display: inline-block;
 	margin-top: 2rem;
 }
 .painel-depoimentos{
@@ -259,9 +264,10 @@ section#contato form{
 	text-align: center;
 	margin: 3rem auto;
 	max-width: 66rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 #contato form .input-wraper{
-	float: left;
 	padding: 1rem;
 }
 #contato form input:not([type=submit]){
@@ -318,6 +324,10 @@ footer > .container p{
 	border-top: .3rem solid #EB2D2D;
 	padding-top: 2rem;
 }
+.venda-single .container{
+	display: flex;
+	flex-wrap: wrap;
+}
 .venda-single > .line-titulo > h2{
 	text-align: center;
 	font-size: 2.5rem;
@@ -349,7 +359,9 @@ footer > .container p{
 	max-width: 100rem;
 }
 .info-veiculo{
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;	
 }
 .foto-destaque{
 	width: 100%;
@@ -391,9 +403,12 @@ footer > .container p{
 }
 .nav-galeria-wraper{
 	width: 200%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 .mini-img-wraper{
-	float: left;
 	padding: .8rem;
 	width: calc(33.3% * (100 / 200) );
 }
@@ -406,7 +421,6 @@ footer > .container p{
 	background-size: cover;
 }
 .descricao-veiculo{
-	float: left;
 	padding: 2rem;
 	font-size: 1.6rem;
 }
@@ -439,9 +453,10 @@ section.venda{
 }
 .content-venda{
 	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 .content-venda > aside{
-	float: left;
 }
 .search{
 	width: 90%;
@@ -482,14 +497,15 @@ section.venda{
 	cursor: pointer;
 }
 .valor-pesquisa{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	padding-top: 1rem;
 	font-size: 1.6rem;
 }
 .valor-pesquisa p:nth-of-type(1){
-	float: left;
 }
 .valor-pesquisa p:nth-of-type(2){
-	float: right;
 }
 .search2{
 	margin-top: 4rem;
@@ -536,10 +552,12 @@ section.venda{
 	padding: 0 1rem;
 }
 .vitrine-venda{
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 .vitrine-venda > .vitrine-single{
-	float: left;
 	margin-bottom: 3rem;
 }
 								/*Pagina
@@ -584,14 +602,12 @@ section.sobre > .container{
 }
 .descricao-foto-autor{
 	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 .img-small-autor{
-	float: left;
 	padding-top: 25%;
 	background-color: #ddd;
-}
-.descricao-descricao{
-	float: left;
 }
 .descricao-foto-autor .descricao-descricao p{
 	padding: 1.5rem;

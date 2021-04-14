@@ -8,12 +8,31 @@ window.addEventListener('load',function(){
 })
 	//mobile menu
 const navMobile = document.querySelector('.mobile i');
+const menu = document.querySelector('.mobile');
+const links = document.querySelectorAll('.mobile ul li a');
 
 navMobile.addEventListener('click',function(){
-	const menu = document.querySelector('.mobile');
-	menu.classList.toggle("abrir");
+	abreFecha();
 })
+	//fechar menu após clique
+	for(let i = 0;i < links.length;i++){	
+		links[i].addEventListener('click',function(){
+			abreFecha();
+		});
+	}
+// links[1].addEventListener('click',function(){
+// 	abreFecha();
+// })
+// links[2].addEventListener('click',function(){
+// 	abreFecha();
+// })
+// links[3].addEventListener('click',function(){
+// 	abreFecha();
+// })
 
+function abreFecha(){
+	menu.classList.toggle("abrir");
+}
 
 //Jquery
 $(function(){

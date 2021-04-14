@@ -132,7 +132,7 @@ ul>li>a.selected{color: red}
 	color: red;
 }
 .mobile ul{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 8.5rem;
 	left: 42.5rem;

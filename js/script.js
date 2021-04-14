@@ -53,9 +53,30 @@ $(function(){
 			barraFill.css('width',currentValue+'%');
 
 			precoAtual = (currentValue/100) * precoMax;
+			precoAtual = formatarPreco(precoAtual);
 			$('.preco-atual').html('R$'+precoAtual);
 		}
 	})
+
+	function formatarPreco(precoAtual){
+		precoAtual = precoAtual.toFixed(2);
+		var preco_arr = precoAtual.split('.');
+
+		var novo_preco = formatarTotal(preco_arr);
+		return novo_preco;
+	}
+	function formatarTotal(preco_arr){
+		if (preco_arr[0] < 1000) {
+			return preco_arr[0] + preco_arr[1];
+		}else if(preco_arr[0]<10000){
+			return preco_arr[0][0]+'.'+preco_arr[0].substr(1,preco_arr[0].length)+
+			','+preco_arr[1];
+		}else{
+			return preco_arr[0][0]+preco_arr[0][1]+'.'+preco_arr[0].substr(2,preco_arr[0].length)+
+			','+preco_arr[1];
+		}
+
+	}
 
 	function disableTextSelection(){
 		//impedir glitch de selecionar texto enquanto arrasta

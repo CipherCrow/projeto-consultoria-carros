@@ -467,6 +467,7 @@ footer > .container p{
 	background-size: cover;
 	background-image: url('../images/carro1.jpg');
 	background-repeat: no-repeat;
+	transition: .5s;
 }
 .nav-galeria-parent{
 	width: 100%;
@@ -499,15 +500,15 @@ footer > .container p{
 	width: 100%;
 }
 .nav-galeria-wraper{
-	width: 200%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	/*js*/
 }
 .mini-img-wraper{
 	padding: .8rem;
-	width: calc(33.3% * (100 / 200) );
+	/*js*/
 }
 .mini-img{
 	width: 100%;
@@ -516,6 +517,9 @@ footer > .container p{
 	background-image: url('../images/carro1.jpg');
 	background-position: center;
 	background-size: cover;
+}
+.mini-img-wraper:nth-child(2n) .mini-img{
+	background-image: url('../images/carro-amarelo.jpg');	
 }
 .descricao-veiculo{
 	padding: 2rem;

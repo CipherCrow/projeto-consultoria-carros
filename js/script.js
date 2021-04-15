@@ -34,7 +34,8 @@ function abreFecha(){
 	menu.classList.toggle("abrir");
 }
 
-//Jquery
+		//Jquery
+
 $(function(){
 	var ponteiro = $('.pointer-barra');
 	var barraFill = $('.barra-preco-fill');
@@ -112,5 +113,67 @@ $(function(){
 		$('body').css('-ns-user-select','auto');
 		$('body').css('-o-user-select','auto');
 		$('body').css('user-select','auto');
+	}
+
+	//mini imagem = 210 210 210
+	var imgWrapper = $('.mini-img-wraper');
+	var miniImg = $('.mini-img');
+	var elScroll = $('.nav-galeria-wraper');
+
+	var imgShow = 3; 
+	var minIndex = imgShow-1;
+
+	//esse ceil serve para arredondar e não permitir que estoure o scroll 
+	var maxIndex = Math.ceil(imgWrapper.length/3) - 1;
+	var curIndex = 0;
+
+	initSlider();
+	navSlider();
+	clickSlider();
+
+	function initSlider(){
+		var amt = imgWrapper.length * 33.3;
+		elScroll.css('width',amt+"%");
+		imgWrapper.css('width',(33.3 * (100/amt))+"%");
+	}
+
+	function navSlider(){
+		var setaEsquerda = $('.fa-angle-left');
+		var setaDireita = $('.fa-angle-right');
+
+		setaDireita.click(function(){
+			if(curIndex < maxIndex){
+				curIndex++;
+				var elOff = imgWrapper.eq(curIndex*3).offset().left - elScroll.offset().left;
+				$('.nav-galeria').animate({
+					'scrollLeft':elOff+'px'
+				});
+			}else{
+				//console.log('chegamos no fim');
+			}
+		})
+		setaEsquerda.click(function(){
+			if(curIndex > 0){
+				curIndex--;
+				var elOff = imgWrapper.eq(curIndex*3).offset().left - elScroll.offset().left;
+				$('.nav-galeria').animate({
+					'scrollLeft':elOff+'px'
+				});
+			}else{
+				//console.log('chegamos no fim');
+			}
+		})	
+	}
+	function clickSlider(){
+		imgWrapper.click(function(){
+			imgWrapper.css('background-color','transparent');
+			$(this).css('background-color','rgb(210,210,210)');
+			//função nova que navega para dentro da criança
+			var img = $(this).children().css('background-image');
+			$('.foto-destaque').css('background-image',img);
+		})
+
+		//deixa a primeira opção já clicada
+		imgWrapper.eq(0).click();
 	}
 })

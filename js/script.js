@@ -176,4 +176,37 @@ $(function(){
 		//deixa a primeira opção já clicada
 		imgWrapper.eq(0).click();
 	}
+	//Depoimentos na pagina index
+
+	var depoimentos = $('.text-depoimentos blockquotes');
+	var authorDepo = $('.next-author h3');
+	var amtDepoimentos = depoimentos.length;
+	var curDepoimento = 0;
+
+	attDepoimento();
+	navDepoimento();
+
+	function attDepoimento(){
+		depoimentos.hide();
+		authorDepo.hide();
+		depoimentos.eq(curDepoimento).show();
+		authorDepo.eq(curDepoimento).show();
+		}
+	function navDepoimento(){
+		$('.fa-caret-right').click(function(){
+			curDepoimento++;
+			if(curDepoimento >= amtDepoimentos){
+				curDepoimento=0;
+			}
+			attDepoimento();
+			
+		})
+		$('.fa-caret-left').click(function(){
+			curDepoimento--;
+			if(curDepoimento < 0){
+				curDepoimento=amtDepoimentos-1;
+			}
+			attDepoimento();
+		})
+	}
 })

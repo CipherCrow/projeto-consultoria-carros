@@ -183,15 +183,24 @@ $(function(){
 	var amtDepoimentos = depoimentos.length;
 	var curDepoimento = 0;
 
+	initDepoimento();
 	attDepoimento();
 	navDepoimento();
+
+	function initDepoimento(){
+		depoimentos.hide();
+		authorDepo.hide();
+
+		attDepoimento();
+	}
 
 	function attDepoimento(){
 		depoimentos.hide();
 		authorDepo.hide();
-		depoimentos.eq(curDepoimento).show();
-		authorDepo.eq(curDepoimento).show();
-		}
+		depoimentos.eq(curDepoimento).fadeIn(700);
+		authorDepo.eq(curDepoimento).fadeIn(700);
+	}
+
 	function navDepoimento(){
 		$('.fa-caret-right').click(function(){
 			curDepoimento++;
